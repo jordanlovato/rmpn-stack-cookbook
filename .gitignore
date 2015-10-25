@@ -1,0 +1,5 @@
+cookbooks/
+disk1.vdi
+.vagrant/
+tmp/
+test/
