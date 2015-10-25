@@ -1,0 +1,13 @@
+name 'shelly'
+maintainer 'Jordan Lovato'
+maintainer_email 'jordanlovato@gmail.com'
+license 'all_rights'
+description 'Installs/Configures shelly'
+long_description 'Installs/Configures shelly'
+version '0.1.0'
+
+depends 'apt', '~> 2.8.2'
+depends 'ruby_build'
+depends 'ruby_rbenv'
+depends 'nginx_passenger'
+depends 'mongodb'
