@@ -1,5 +1,6 @@
 cookbooks/
 disk1.vdi
+Cheffile.lock
 .vagrant/
 tmp/
 test/
