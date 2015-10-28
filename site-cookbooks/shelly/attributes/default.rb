@@ -1,7 +1,7 @@
 default['shelly']['rubies'] = ['2.2.3']
 default['shelly']['active_ruby'] = '2.2.3'
-default['shelly']['webdir'] = '/vagrant/apps/shelly'
-default['shelly']['webuser'] = 'webadmin'
+default['shelly']['webdir'] = '/var/www/shelly'
+default['shelly']['webuser'] = 'www-data'
 default['shelly']['appname'] = 'shelly'
 
 normal['nginx_passenger']['ruby'] = "/usr/local/rbenv/versions/#{node['shelly']['active_ruby']}/bin/ruby"

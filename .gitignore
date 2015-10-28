@@ -4,3 +4,4 @@ Cheffile.lock
 .vagrant/
 tmp/
 test/
+apps/

@@ -26,6 +26,5 @@ end
 # setup nginx site-enabled symlink + conf
 nginx_passenger_site node['shelly']['appname'] do
 	action :create
-	dir "#{node['shelly']['webdir']}/public"
 	template 'nginx.conf.erb'
 end

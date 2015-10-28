@@ -2,6 +2,7 @@
 server {
 	server_name localhost;
 	passenger_enabled on;
+	rails_env development;
 	access_log <%= node['shelly']['webdir'] %>/log/nginx_access.log;
 	error_log <%= node['shelly']['webdir'] %>/log/nginx_error.log;
 	root <%= node['shelly']['webdir'] %>/public;

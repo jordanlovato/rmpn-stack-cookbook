@@ -8,6 +8,7 @@ version '0.1.0'
 
 depends 'apt', '~> 2.8.2'
 depends 'ruby_build'
+depends 'nodejs'
 depends 'ruby_rbenv'
 depends 'nginx_passenger'
-depends 'mongodb'
+depends 'mongodb-10gen'

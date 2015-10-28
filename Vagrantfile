@@ -6,7 +6,7 @@ Vagrant.configure(2) do |config|
   config.vm.network :forwarded_port, guest: 80, host: 8000 
 
   config.vm.provider "virtualbox" do |vb|
-	vb.customize ["modifyvm", :id, "--memory", "2048"]
+	vb.customize ["modifyvm", :id, "--memory", "1024"]
 	vb.customize ["modifyvm", :id, "--cpus"  , 2]
 	vb.customize ["modifyvm", :id, "--chipset", "ich9"]
 
@@ -17,8 +17,8 @@ Vagrant.configure(2) do |config|
         	'createhd',
         	'--filename', file_to_disk,
         	'--format', 'vdi',
-        	# 50gb
-        	'--size', 50 * 1024
+        	# 10gb
+        	'--size', 10 * 1024
         	]
 
 	    	vb.customize [
@@ -43,4 +43,5 @@ Vagrant.configure(2) do |config|
 	chef.add_recipe "shelly"
   end
 
+  config.vm.synced_folder "apps/", "/var/www/", user: "www-data", group: "www-data"
 end
